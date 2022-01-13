@@ -1,0 +1,46 @@
+.lg-download.lg-icon{
+    display: none;
+}
+.lg-toolbar .lg-icon{
+    position: relative;
+}
+
+.lg-toolbar .lg-close:after{
+    content: ''!important;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    width: 20px;
+    height: 20px;
+    background-image: url(img/cancel.svg);
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.lg-next, .lg-prev{
+    background-color: transparent;
+    width: 20px;
+    height: 50px;
+}
+
+.lg-prev {
+    left: 0;
+}
+
+.lg-next:before,
+.lg-prev:after{
+    content: ''!important;
+    position: absolute;
+    width: 20px;
+    height: 50px;
+    background-image: url(img/arrow.svg);
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.lg-prev:after{
+    transform: rotate(180deg);
+}
+

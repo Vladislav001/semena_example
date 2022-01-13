@@ -1,0 +1,95 @@
+.aside-filter__title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aside-filter__list{
+    padding-left: 0;
+    list-style: none;
+}
+
+.aside-filter__bold{
+    display: flex;
+    align-items: center;
+
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.aside-filter__title._arrow .aside-filter__arrow,
+.aside-filter__bold-arrow{
+    background-image: url(img/arrow.svg);
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 10px;
+    transition: all 250ms;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.aside-filter__title._arrow._active .aside-filter__arrow,
+.aside-filter__bold-arrow._active{
+    transform: rotate(180deg) translate(5px, 0);
+}
+
+.aside-filter__list{
+    /*display: none;*/
+}
+
+.bx-filter-select-text{
+    width: 250px;
+    height: 40px;
+    padding: 10px;
+    background: var(--c-base--dark);
+    color: white;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.popup-window{
+    width: 250px;
+    padding: 0;
+}
+
+.bx-filter-select-popup ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.bx-filter-select-popup ul li label{
+    display: block;
+    padding: 10px;
+    background: #68B22E50;
+    transition: all 250ms;
+    cursor: pointer;
+}
+
+.bx-filter-select-popup ul li label:hover{
+    background: #68B22E;
+}
+
+.aside-filter__checkboxes{
+    margin: 20px 0!important;
+}
+
+.bx-filter-select-text{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.bx-filter-select-text:before{
+    content: '';
+    position: absolute;
+    right: 10px;
+    width: 15px;
+    height: 10px;
+    background-image: url(img/arrow2.svg);
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
